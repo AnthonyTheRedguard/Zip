@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="display_leter">
+        <h1>The letter is now </h1>
+    </div>
+    <div id="setup_question">
+        <form id="form">
+            <label for="categories">How many categories would you like to have?</label>
+            <span id="setup_button_group">
+                <select name="categories" id="categories">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="submit" value="Submit">
+                <button id="done-button">Done</button>
+            </span>
+        </form>
+    </div>
+    <button id="add_row">Generate Next Letter</button>
+    <table id="game_table">
+        <thead>
+            <tr id="categories_row">
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script src="game.js"></script>
+    <script src="table.js"></script>
+</body>
+</html>
